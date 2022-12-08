@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Tax Calculator</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="allText">
+        <h1 class="appTitle">State Tax Calculator</h1>
+        <div class="calcBoxes">
+            <input class="dollarEnter" id="input" type="text" placeholder="Enter Dollar Amount">
+
+            <button class="calculateButton" onclick = "addTax()">Calculate</button>
+
+            <select name="stateTax" id="taxCalc" class="dropdown-content">
+                <option value="7.25">California</option>
+                <option value="6.25">Washington</option>
+                <option value="2.9">Colorado</option>
+                <option value="4">Hawaii</option>
+            </select>
+
+            <p class="totalBox">Total with tax : <br>
+                <span class="resultDisplay" id = "result"></span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
